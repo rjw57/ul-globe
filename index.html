@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="ol.css" type="text/css">
+  <link rel="stylesheet" href="map.css" type="text/css">
+  </head>
+
+  <body>
+  <div id="map" class="map"></div>
+  <div id="controls" class="controls">
+    <input type="checkbox" id="toggle" checked=1
+      onchange="Map.coastlineLayer.setVisible(this.checked)">
+    <label for="toggle">Show modern coastlines</label>
+  </div>
+  <script src="ol.js"></script>
+  <script src="map.js"></script>
+  </body>
+</html>
