@@ -26,6 +26,7 @@ $(COASTLINES_GEOJSON): $(COASTLINES)
 copy-app:
 	mkdir -p "$(OUTPUT_DIR)"
 	cp $(SOURCE_FILES) "$(OUTPUT_DIR)"
+	cp "rasters/ul-globe.tiff" "$(OUTPUT_DIR)"
 
 clean:
 	rm -r "$(OUTPUT_DIR)"
